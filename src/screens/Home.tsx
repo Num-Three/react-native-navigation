@@ -21,7 +21,6 @@ const HomeScreen: React.FC<Props> = ({ navigation }) => {
     const quantity = cartItem ? cartItem.quantity : 0;
     return (
       <View style={styles.item}>
-        {/* Conditionally display "(In Cart)" */}
         <Text style={styles.itemName}>
           {item.name} {quantity > 0 ? `(In Cart: ${quantity})`: ""} - ${item.price}
         </Text>
